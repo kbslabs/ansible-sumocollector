@@ -121,19 +121,6 @@
   when: sumologic_install_method == "docker"
   tags: [sumologic, sumologic-collector]
 
-- name: 'Set udp limits for sumo (native and inherited by container)'
-  sysctl:
-    name: "{{ item.n }}"
-    value: "{{ item.v }}"
-    state: present
-    sysctl_set: yes
-    reload: yes
-  with_items:
-   - { n: 'net.core.wmem_max', v: 8388608 }
-   - { n: 'net.core.rmem_max', v: 8388608 }
-  tags: [sumologic, sumologic-collector]
-  when: (ansible_virtualization_type is not defined or (ansible_virtualization_type != "lxc" and ansible_virtualization_type != "docker"))
-
 - name: 'Ensure collector is running'
   service:
     name: "{{ item }}"
