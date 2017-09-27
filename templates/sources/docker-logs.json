@@ -7,6 +7,6 @@
       "uri": "unix:///var/run/docker.sock",
       "multilineProcessingEnabled": false,
       "sourceType": "DockerLog",
-      "category": "{{ deployment_id }}/containers"
+      "category": "{{ sumologic_collector_deployment_id }}/containers"
    }
 }

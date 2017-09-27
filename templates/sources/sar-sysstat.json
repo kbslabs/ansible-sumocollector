@@ -19,6 +19,6 @@
     "commands":["/bin/sh"],
     "extension":null,
     "sourceType":"Script",
-    "category":"{{ deployment_id }}/os/perf"
+    "category":"{{ sumologic_collector_deployment_id }}/os/perf"
   }
 }

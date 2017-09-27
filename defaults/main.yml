@@ -70,7 +70,7 @@ sumologic_collector_force_timezone: "false"
 #sumologic_token_installer: xxx
 
 ## Just for testing
-deployment_id: ANSIBLETEST
+sumologic_collector_deployment_id: ANSIBLETEST
 sumologic_collector_default_log_path:
   - name: "SYSTEM LOG"
     path: "/var/log/*log"

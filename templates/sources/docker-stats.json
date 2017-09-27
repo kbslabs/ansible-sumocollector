@@ -13,6 +13,6 @@
       "multilineProcessingEnabled": true,
       "sourceType": "DockerStats",
       "uri": "unix:///var/run/docker.sock",
-      "category": "{{ deployment_id }}/infra/docker"
+      "category": "{{ sumologic_collector_deployment_id }}/infra/docker"
      }
 }

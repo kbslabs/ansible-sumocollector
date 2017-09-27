@@ -13,7 +13,7 @@ Default variables:
 ```
 For a complete list see defaults.yml
 
-deployment_id: Following sumo best practices, there is a top-level deployment_id which sets
+sumologic_collector_deployment_id: Following sumo best practices, there is a top-level deployment_id which sets
 _sourceCategory allowing indexing based on deployment.
 
 # Credentials.  Set these in your environment or over-ride.

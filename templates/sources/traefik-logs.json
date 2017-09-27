@@ -4,6 +4,6 @@
       "name": "Traefik-Logs",
       "sourceType": "LocalFile",
       "pathExpression": "/var/log/traefik/*.log*",
-      "category": "{{ deployment_id }}/infra/traefik"
+      "category": "{{ sumologic_collector_deployment_id }}/infra/traefik"
      }
 } 

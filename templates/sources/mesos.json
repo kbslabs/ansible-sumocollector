@@ -10,6 +10,6 @@
       "timeZone": "UTC",
       "pathExpression": "/var/log/mesos/*.log*",
       "blacklist": ["/var/log/mesos/*.gz*"],
-      "category": "{{ deployment_id }}/infra/mesos"
+      "category": "{{ sumologic_collector_deployment_id }}/infra/mesos"
     }
 }

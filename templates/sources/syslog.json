@@ -29,6 +29,6 @@
         }],
        "sourceType": "LocalFile",
        "pathExpression": "/var/log/messages*",
-       "category": "{{ deployment_id }}/os/syslog"
+       "category": "{{ sumologic_collector_deployment_id }}/os/syslog"
     }
 }

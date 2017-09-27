@@ -9,6 +9,6 @@
       "protocol": "TCP",
       "encoding": "UTF-8",
       "forceTimeZone": false,
-      "category": "{{ deployment_id }}/os/syslog-port"
+      "category": "{{ sumologic_collector_deployment_id }}/os/syslog-port"
    }
 }
