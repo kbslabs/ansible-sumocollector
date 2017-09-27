@@ -82,20 +82,19 @@
     sumologic_collector_log_paths: "{{ sumologic_collector_default_log_path|list + sumologic_collector_application_log_path|list }}"
   tags: [sumologic, sumologic-collector]
 
-- name: 'Create collector configuration'
-  template:
-    src: collector.json.j2
-    dest: /etc/sumologic-collector.json
-  tags: [sumologic, sumologic-collector]
-  notify: Restart SumoCollector
-  when: sumologic_single_source_file == "yes"
-
 - name: 'Ensure sumo sources directory exists'
   file:
     state: directory
     dest: "{{ sumologic_sources_dir }}"
   tags: [sumologic, sumologic-collector]
-  when: sumologic_single_source_file != "yes"
+
+- name: 'Create collector configuration'
+  template:
+    src: collector.json.j2
+    dest: "{{ sumologic_sources_dir }}"
+  tags: [sumologic, sumologic-collector]
+  notify: Restart SumoCollector
+  when: sumologic_single_source_file == "yes"
 
 - name: 'Ensure sumo temp data and logs dir exists'
   file:
