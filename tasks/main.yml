@@ -91,7 +91,7 @@
 - name: 'Create collector configuration'
   template:
     src: collector.json.j2
-    dest: "{{ sumologic_sources_dir }}"
+    dest: "{{ sumologic_sources_dir }}/collector.json"
   tags: [sumologic, sumologic-collector]
   notify: Restart SumoCollector
   when: sumologic_single_source_file == "yes"
