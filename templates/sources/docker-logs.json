@@ -5,7 +5,7 @@
       "allContainers": true,
       "collectEvents": true,
       "uri": "unix:///var/run/docker.sock",
-      "multilineProcessingEnabled": false,
+      "multilineProcessingEnabled": true,
       "sourceType": "DockerLog",
       "category": "{{ sumologic_collector_deployment_id }}/containers"
    }
