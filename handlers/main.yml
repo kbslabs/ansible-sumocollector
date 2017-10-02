@@ -3,10 +3,9 @@
 - name: Restart SumoCollector
   service:
     name: "{{ sumologic_collector_service_name }}"
-    state: stopped
+    state: restarted
     use: service
   tags: [sumologic, sumologic-collector]
-  notify: 'Restart SumoCollector wait'
   changed_when: True
 
 # attempt to avoid collectore uuid suffixes caused when
