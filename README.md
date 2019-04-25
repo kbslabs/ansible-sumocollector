@@ -145,3 +145,8 @@ MIT
 * Kesten Broughton - Sr. Devops Engineer, CognitiveScale
 * Juju4
 
+```
+ Copyright (C) Kellermeyer Bergensons Services, Inc - All Rights Reserved
+ Proprietary and confidential
+ Unauthorized copying via any medium is strictly prohibited
+```
